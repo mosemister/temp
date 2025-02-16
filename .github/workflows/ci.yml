@@ -19,6 +19,8 @@ jobs:
           java-version: 8
       - name: Validate Gradle wrapper
         uses: gradle/actions/wrapper-validation@v3
+      - name: Give permission
+        run: chmod +x ./gradlew
 
       # Actually build
       - name: Setup Gradle
